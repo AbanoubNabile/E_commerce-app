@@ -10,7 +10,10 @@ class Login extends StatelessWidget {
       child: Column(
         children: [
           TextField(
-              keyboardType: TextInputType.text, decoration: InputDecoration())
+              keyboardType: TextInputType.text,
+              decoration: InputDecoration(
+                hintText: "Enter Your Password : ",
+              ))
         ],
       ),
     ));
