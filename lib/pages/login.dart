@@ -8,7 +8,7 @@ class Login extends StatelessWidget {
     return Scaffold(
         body: Center(
       child: Column(
-        children: [TextField()],
+        children: [TextField(keyboardType: TextInputType.text)],
       ),
     ));
   }
