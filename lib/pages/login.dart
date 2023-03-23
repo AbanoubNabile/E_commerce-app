@@ -12,9 +12,8 @@ class Login extends StatelessWidget {
           TextField(
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
-                hintText: "Enter Your Password : ",
-                 enabledBorder:
-              ))
+                  hintText: "Enter Your Password : ",
+                  enabledBorder: OutlineInputBorder))
         ],
       ),
     ));
