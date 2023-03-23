@@ -5,7 +5,6 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var custom_textfiled;
     return Scaffold(
         body: Center(
       child: Column(
@@ -13,15 +12,18 @@ class Login extends StatelessWidget {
           const SizedBox(
             height: 200,
           ),
-          custom_textfiled(
-              TextInputTypee: TextInputType.emailAddress,
-              IsPassword: false,
-              hinttextt: "Enter your email"),
+          TextField(
+              keyboardType: TextInputType.emailAddress,
+              obscureText: false,
+              decoration: InputDecoration(
+                  hintText: "Enter your email",
+                  enabledBorder: OutlineInputBorder(
+                      borderSide: Divider.createBorderSide(context)),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey)),
+                  filled: true,
+                  contentPadding: const EdgeInsets.all(8))),
           const SizedBox(height: 30),
-          custom_textfiled(
-              TextInputTypee: TextInputType.emailAddress,
-              IsPassword: true,
-              hinttextt: "Enter your password")
         ],
       ),
     ));
