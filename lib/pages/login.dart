@@ -1,5 +1,7 @@
+import 'package:commec_app/shared/colors.dart';
 import 'package:flutter/material.dart';
 
+import '../shared/colors.dart';
 import '../shared/constant.dart';
 
 class Login extends StatelessWidget {
@@ -30,13 +32,13 @@ class Login extends StatelessWidget {
           ElevatedButton(
             onPressed: () {},
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Colors.orange),
+              backgroundColor: MaterialStateProperty.all(BTNgreen),
               padding: MaterialStateProperty.all(EdgeInsets.all(12)),
               shape: MaterialStateProperty.all(RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8))),
             ),
             child: Text(
-              "click here",
+              "Sign in",
               style: TextStyle(fontSize: 19),
             ),
           ),
