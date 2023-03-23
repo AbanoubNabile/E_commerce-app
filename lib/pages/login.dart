@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../shared/constant.dart';
+
 class Login extends StatelessWidget {
   const Login({super.key});
 
@@ -15,19 +17,29 @@ class Login extends StatelessWidget {
           TextField(
               keyboardType: TextInputType.emailAddress,
               obscureText: false,
-              decoration: ,
+              decoration: widget_text_felid.copyWith(
+                hintText: "Enter your email",
+              )),
           const SizedBox(height: 30),
           TextField(
-              keyboardType: TextInputType.emailAddress,
-              obscureText: false,
-              decoration: InputDecoration(
-                  hintText: "Enter your email",
-                  enabledBorder: OutlineInputBorder(
-                      borderSide: Divider.createBorderSide(context)),
-                  focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.grey)),
-                  filled: true,
-                  contentPadding: const EdgeInsets.all(8)))
+              keyboardType: TextInputType.text,
+              obscureText: true,
+              decoration: widget_text_felid.copyWith(
+                hintText: "Enter your password",
+              )),
+          ElevatedButton(
+            onPressed: () {},
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(Colors.orange),
+              padding: MaterialStateProperty.all(EdgeInsets.all(12)),
+              shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8))),
+            ),
+            child: Text(
+              "click here",
+              style: TextStyle(fontSize: 19),
+            ),
+          ),
         ],
       ),
     ));
