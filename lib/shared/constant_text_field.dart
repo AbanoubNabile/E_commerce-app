@@ -1,15 +1,25 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class custom_textfiled extends StatelessWidget {
-  const custom_textfiled({super.key});
+  final TextInputType TextInputTypee;
+  final bool IsPassword;
+  final String hinttextt;
 
+custom_textfiled({
+  required this.TextInputTypee,required this.IsPassword,required this.hinttextt
+})
+
+
+  
   @override
   Widget build(BuildContext context) {
     return TextField(
-        keyboardType: TextInputType.emailAddress,
-        obscureText: false,
+        keyboardType: TextInputTypee,
+        obscureText: IsPassword,
         decoration: InputDecoration(
-            hintText: "Enter your Email ",
+            hintText: hinttextt,
             enabledBorder: OutlineInputBorder(
                 borderSide: Divider.createBorderSide(context)),
             focusedBorder:
