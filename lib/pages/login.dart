@@ -18,8 +18,7 @@ class Login extends StatelessWidget {
                   focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.grey)),
                   filled: true,
-                  contentPadding:
-                  ))
+                  contentPadding: const EdgeInsets.all(8)))
         ],
       ),
     ));
