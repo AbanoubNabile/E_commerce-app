@@ -1,4 +1,5 @@
 import 'package:commec_app/pages/login.dart';
+import 'package:commec_app/pages/register_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Login());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: Register());
   }
 }
