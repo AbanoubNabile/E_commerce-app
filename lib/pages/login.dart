@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
+class Login extends StatelessWidget {
+  const Login({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
+  }
 }
 
 class MyWidget extends StatelessWidget {
