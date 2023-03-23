@@ -9,10 +9,14 @@ class Login extends StatelessWidget {
         body: Center(
       child: Column(
         children: [
+          const SizedBox(
+            height: 200,
+          ),
           TextField(
-              keyboardType: TextInputType.text,
+              keyboardType: TextInputType.emailAddress,
+              obscureText: false,
               decoration: InputDecoration(
-                  hintText: "Enter Your Password : ",
+                  hintText: "Enter your Email ",
                   enabledBorder: OutlineInputBorder(
                       borderSide: Divider.createBorderSide(context)),
                   focusedBorder: OutlineInputBorder(
