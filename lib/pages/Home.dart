@@ -14,7 +14,10 @@ class Home extends StatelessWidget {
         appBar: AppBar(
       actions: [
         Row(
-          children: [Text("\$13"), Text("\$13")],
+          children: [
+            Text("\$13", style: TextStyle(fontSize: 18)),
+            Text("\$13")
+          ],
         ),
       ],
       backgroundColor: appbarGreen,
