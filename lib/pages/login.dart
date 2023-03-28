@@ -1,7 +1,6 @@
 import 'package:commec_app/pages/register_page.dart';
 import 'package:commec_app/shared/colors.dart';
 import 'package:flutter/material.dart';
-
 import '../shared/colors.dart';
 import '../shared/constant.dart';
 
