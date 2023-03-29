@@ -1,5 +1,5 @@
 import 'package:commec_app/shared/colors.dart';
-
+import 'dart:ui' show lerpDouble;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +23,9 @@ class Home extends StatelessWidget {
                         AssetImage("assets\img\IMG_20230302_134818.jpg")),
                 accountEmail: Text("Abanoub Nabil @gmail.com"),
                 accountName: Text("Abanoub Nabil"),
-              )
+              ),
+              ListTile(
+                  title: Text("Home"), leading: Icon(Icons.home), onTap: () {})
             ]),
           ),
           appBar: AppBar(
