@@ -15,7 +15,11 @@ class checkOut extends StatelessWidget {
         title: Text("checkout screen"),
         actions: [product_and_price()],
       ),
-      body: SizedBox(height: 300, child: ListView.builder()),
+      body: SizedBox(
+          height: 300,
+          child: ListView.builder(
+            padding: const EdgeInsets.all(8),
+          )),
     );
   }
 }
