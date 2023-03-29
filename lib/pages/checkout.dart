@@ -24,7 +24,9 @@ class checkOut extends StatelessWidget {
             itemCount: Carttt.selectedProducts.length,
             itemBuilder: (BuildContext context, int index) {
               return Card(
-                child: ListTile,
+                child: ListTile(
+                  subtitle: Text("TEST"),
+                ),
               );
             },
           )),
