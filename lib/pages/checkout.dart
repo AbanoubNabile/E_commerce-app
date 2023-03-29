@@ -32,7 +32,7 @@ class checkOut extends StatelessWidget {
                   title: Text("Test"),
                   trailing: IconButton(
                     onPressed: () {
-                      Carttt.delete(Carttt.selectedProducts[index])
+                      Carttt.delete(Carttt.selectedProducts[index]);
                     },
                     icon: Icon(Icons.remove),
                   ),
