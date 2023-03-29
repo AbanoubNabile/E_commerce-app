@@ -20,21 +20,34 @@ class Home extends StatelessWidget {
               itemCount: 4,
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
+                  onTap: () {},
                   child: GridTile(
-                    child: Stack(
-                      children: [
-                        Positioned(
-                          right: 0,
-                          left: 0,
-                          top: -3,
-                          bottom: -9,
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(55),
-                              child: Image.asset("assets/img/1.webp")),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            right: 0,
+                            left: 0,
+                            top: -3,
+                            bottom: -9,
+                            child: ClipRRect(
+                                borderRadius: BorderRadius.circular(55),
+                                child: Image.asset("assets/img/1.webp")),
+                          ),
+                        ],
+                      ),
+                      footer: GridTileBar(
+// backgroundColor: Color.fromARGB(66, 73, 127, 110),
+                        trailing: IconButton(
+                            color: Color.fromARGB(255, 62, 94, 70),
+                            onPressed: () {},
+                            icon: Icon(Icons.add)),
+
+                        leading: Text("\$12.99"),
+
+                        title: Text(
+                          "",
                         ),
-                      ],
-                    ),
-                  ),
+                      )),
                 );
               }),
         ),
