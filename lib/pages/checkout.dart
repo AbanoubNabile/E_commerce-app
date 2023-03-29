@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../shared/appbar.dart';
+
 class checkOut extends StatelessWidget {
   const checkOut({super.key});
 
@@ -9,7 +11,9 @@ class checkOut extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title:Text("checkout screen") ,
-        actions:[],
+        actions:[
+          product_and_price()
+        ],
       ),
       body: ,
 
