@@ -3,15 +3,23 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Item {
-  String ImgPath;
-   double price;
+  String imgPath;
+  double price;
 
-   Item({required this.ImgPath,required this.price})
-
+  Item({required this.imgPath, required this.price});
 }
 
 class Home extends StatelessWidget {
-  const Home({super.key});
+  final List<Item> items = [
+    Item(price: 12.99, imgPath: "assets/img/1.webp"),
+    Item(price: 12.99, imgPath: "assets/img/2.webp"),
+    Item(price: 12.99, imgPath: "assets/img/3.webp"),
+    Item(price: 12.99, imgPath: "assets/img/4.webp"),
+    Item(price: 12.99, imgPath: "assets/img/5.webp"),
+    Item(price: 12.99, imgPath: "assets/img/6.webp"),
+    Item(price: 12.99, imgPath: "assets/img/7.webp"),
+    Item(price: 12.99, imgPath: "assets/img/8.webp"),
+  ];
 
   @override
   Widget build(BuildContext context) {
