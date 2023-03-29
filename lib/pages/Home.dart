@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../model/item.dart';
+import '../shared/appbar.dart';
 import 'details_screen.dart';
 
 class Home extends StatelessWidget {
@@ -105,7 +106,7 @@ class Home extends StatelessWidget {
               ]),
         ),
         appBar: AppBar(
-          actions: [],
+          actions: [product_and_price()],
           backgroundColor: appbarGreen,
           title: Consumer<Cart>(builder: ((context, testt, child) {
             return Text("${testt}");
