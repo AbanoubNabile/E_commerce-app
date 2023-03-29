@@ -8,7 +8,6 @@ class Details extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text(""),
       appBar: AppBar(
         actions: [
           Row(
@@ -39,6 +38,12 @@ class Details extends StatelessWidget {
         ],
         backgroundColor: appbarGreen,
         title: Text("Home"),
+      ),
+      body: Column(
+        children: [
+          Image.asset("assets/img/1.webp"),
+          Text("\$ 12.99 "),
+        ],
       ),
     );
   }
