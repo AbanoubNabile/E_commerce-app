@@ -42,17 +42,23 @@ class Details extends StatelessWidget {
       body: Column(
         children: [
           Image.asset("assets/img/1.webp"),
-          SizedBox(height: 11,),
-          Text("\$ 12.99 ",style: TextStyle(fontSize: ),)
-            ,Row(
+          SizedBox(
+            height: 11,
+          ),
+          Text(
+            "\$ 12.99 ",
+            style: TextStyle(fontSize: 20),
+          ),
+          Row(
             children: [
               Container(
                 child: Text("New"),
-                decoration: BoxDecoration(color:Color.fromARGB(255,255,129,129)),
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 255, 129, 129),
+                    borderRadius: BorderRadius.circular(4)),
               )
             ],
-
-            )
+          )
         ],
       ),
     );
