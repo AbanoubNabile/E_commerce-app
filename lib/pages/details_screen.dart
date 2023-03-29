@@ -42,7 +42,16 @@ class Details extends StatelessWidget {
       body: Column(
         children: [
           Image.asset("assets/img/1.webp"),
-          Text("\$ 12.99 "),
+          SizedBox(height: 11,),
+          Text("\$ 12.99 ",style: TextStyle(fontSize: ),)
+            ,Row(
+            children: [
+              Container(
+                child: Text("New"),
+              )
+            ],
+
+            )
         ],
       ),
     );
