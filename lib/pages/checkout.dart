@@ -2,6 +2,7 @@ import 'package:commec_app/shared/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../provider/cart.dart';
 import '../shared/appbar.dart';
 
 class checkOut extends StatelessWidget {
@@ -9,6 +10,7 @@ class checkOut extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Carttt = Provider.of<Cart>(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: appbarGreen,
@@ -19,7 +21,10 @@ class checkOut extends StatelessWidget {
           height: 300,
           child: ListView.builder(
             padding: const EdgeInsets.all(8),
-            itemCount: mylist.length,
+            itemCount: Carttt.selectedProducts.length,
+            itemBuilder: (BuildContext context, int index) {
+              return Card();
+            },
           )),
     );
   }
