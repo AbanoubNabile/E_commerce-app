@@ -60,6 +60,52 @@ class Details extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Color.fromARGB(255, 255, 129, 129),
                     borderRadius: BorderRadius.circular(4)),
+              ),
+              Row(
+                children: [
+                  Icon(
+                    Icons.star,
+                    size: 26,
+                    color: Color.fromARGB(255, 255, 191, 0),
+                  ),
+                  Icon(
+                    Icons.star,
+                    size: 26,
+                    color: Color.fromARGB(255, 255, 191, 0),
+                  ),
+                  Icon(
+                    Icons.star,
+                    size: 26,
+                    color: Color.fromARGB(255, 255, 191, 0),
+                  ),
+                  Icon(
+                    Icons.star,
+                    size: 26,
+                    color: Color.fromARGB(255, 255, 191, 0),
+                  ),
+                  Icon(
+                    Icons.star,
+                    size: 26,
+                    color: Color.fromARGB(255, 255, 191, 0),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Icon(
+                    Icons.edit_location,
+                    size: 26,
+                    color: Color.fromARGB(168, 3, 65, 27),
+                    // color: Color.fromARGB(255, 186, 30, 30),
+                  ),
+                  SizedBox(
+                    width: 3,
+                  ),
+                  Text(
+                    "Flower Shop",
+                    style: TextStyle(fontSize: 19),
+                  ),
+                ],
               )
             ],
           )
