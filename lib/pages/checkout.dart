@@ -10,14 +10,10 @@ class checkOut extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:Text("checkout screen") ,
-        actions:[
-          product_and_price()
-        ],
+        title: Text("checkout screen"),
+        actions: [product_and_price()],
       ),
-      body: ,
-
-
+      body: Text(""),
     );
   }
 }
