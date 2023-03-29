@@ -1,7 +1,9 @@
+import 'package:commec_app/provider/cart.dart';
 import 'package:commec_app/shared/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../model/item.dart';
 import 'details_screen.dart';
@@ -130,7 +132,10 @@ class Home extends StatelessWidget {
             ),
           ],
           backgroundColor: appbarGreen,
-          title: Text("Home"),
+          title: Consumer<Cart>(
+  builder: ((context, testt, child) {
+  return Text("${testt}");
+})),  ,
         ),
       ),
     );
