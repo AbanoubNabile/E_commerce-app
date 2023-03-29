@@ -3,10 +3,7 @@ class Item {
   double price;
   String location;
 
-  Item(
-      {required this.imgPath,
-      required this.price,
-      this.location = "Main branch"});
+  Item({required this.imgPath, required this.price, this.location = "Abanoub"});
 }
 
 final List<Item> items = [
