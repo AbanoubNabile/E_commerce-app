@@ -8,6 +8,7 @@ class checkOut extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: ,
+      body: ,
 
 
     );
