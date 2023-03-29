@@ -7,4 +7,11 @@ class Cart with ChangeNotifier {
   add(Item product) {
     selectedProducts.add(product);
   }
+
+  delete(Item product) {
+    selectedProducts.remove(product);
+    price -= product.price.round();
+
+    notifyListeners();
+  }
 }
