@@ -20,7 +20,7 @@ class checkOut extends StatelessWidget {
       body: Column(children: [
          child: SizedBox(
           SingleChildScrollView(
-            
+
           )
             height: 300,
             child: ListView.builder(
@@ -49,3 +49,4 @@ class checkOut extends StatelessWidget {
       );
   }
 }
+/**** */
