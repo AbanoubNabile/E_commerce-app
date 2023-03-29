@@ -26,6 +26,10 @@ class checkOut extends StatelessWidget {
               return Card(
                 child: ListTile(
                   subtitle: Text("TEST"),
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage("PATH"),
+                  ),
+                  title: Text("Test"),
                 ),
               );
             },
