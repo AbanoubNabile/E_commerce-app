@@ -2,6 +2,14 @@ import 'package:commec_app/shared/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+class Item {
+  String ImgPath;
+   double price;
+
+   Item({required this.ImgPath,required this.price})
+
+}
+
 class Home extends StatelessWidget {
   const Home({super.key});
 
