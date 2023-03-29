@@ -8,7 +8,8 @@ class checkOut extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:Text("checkout screen")
+        title:Text("checkout screen") ,
+        actions:[],
       ),
       body: ,
 
