@@ -3,6 +3,7 @@ import 'package:commec_app/pages/details_screen.dart';
 import 'package:commec_app/pages/login.dart';
 import 'package:commec_app/pages/register_page.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +14,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Home());
+    return ChangeNotifierProvider(
+        create: (context) {
+          return ClassName();
+        },
+        child: MaterialApp(debugShowCheckedModeBanner: false, home: Home()));
   }
 }
