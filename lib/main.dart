@@ -1,4 +1,5 @@
 import 'package:commec_app/pages/Home.dart';
+import 'package:commec_app/pages/checkout.dart';
 import 'package:commec_app/pages/details_screen.dart';
 import 'package:commec_app/pages/login.dart';
 import 'package:commec_app/pages/register_page.dart';
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         create: (context) {
           return Cart();
         },
-        child: MaterialApp(debugShowCheckedModeBanner: false, home: Home()));
+        child:
+            MaterialApp(debugShowCheckedModeBanner: false, home: checkOut()));
   }
 }
