@@ -30,6 +30,10 @@ class Home extends StatelessWidget {
                 title: Text("My products"),
                 leading: Icon(Icons.add_shopping_cart),
                 onTap: () {}),
+            ListTile(
+                title: Text("About"),
+                leading: Icon(Icons.help_center),
+                onTap: () {}),
           ]),
         ),
         appBar: AppBar(
