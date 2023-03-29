@@ -13,6 +13,10 @@ class Home extends StatelessWidget {
           drawer: Drawer(
             child: Column(children: [
               UserAccountsDrawerHeader(
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets\img\686034.jpg"),
+                        fit: BoxFit.cover)),
                 currentAccountPicture: CircleAvatar(
                     radius: 55,
                     backgroundImage:
