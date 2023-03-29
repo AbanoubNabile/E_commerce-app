@@ -48,6 +48,7 @@ class Details extends StatelessWidget {
             children: [
               Container(
                 child: Text("New"),
+                decoration: BoxDecoration(color:Color.fromARGB(255,255,129,129)),
               )
             ],
 
