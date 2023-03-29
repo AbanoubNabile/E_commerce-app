@@ -15,9 +15,11 @@ class Home extends StatelessWidget {
       actions: [
         Row(
           children: [
-            Text("\$13", style: TextStyle(fontSize: 18)),
-            Text("\$13"),
-            IconButton(onPressed: () {}, icon: Icon(Icons.add_shopping_cart))
+            IconButton(onPressed: () {}, icon: Icon(Icons.add_shopping_cart)),
+            Padding(
+              padding: const EdgeInsets.only(right: 12),
+              child: Text("\$13", style: TextStyle(fontSize: 18)),
+            ),
           ],
         ),
       ],
