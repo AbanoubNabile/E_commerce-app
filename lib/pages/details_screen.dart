@@ -109,7 +109,10 @@ class Details extends StatelessWidget {
                 ],
               )
             ],
-          )
+          ),
+          SizedBox(
+            height: 16,
+          ),
         ],
       ),
     );
