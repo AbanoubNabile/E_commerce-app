@@ -50,6 +50,7 @@ class Details extends StatelessWidget {
             style: TextStyle(fontSize: 20),
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
                 padding: EdgeInsets.all(4),
