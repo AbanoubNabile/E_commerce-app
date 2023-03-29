@@ -1,7 +1,5 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables
-
-import 'package:commec_app/pages/login.dart';
 import 'package:commec_app/shared/colors.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +13,10 @@ class Home extends StatelessWidget {
           drawer: Drawer(
             child: Column(children: [
               UserAccountsDrawerHeader(
+                currentAccountPicture: CircleAvatar(
+                    radius: 55,
+                    backgroundImage:
+                        AssetImage("assets\img\IMG_20230302_134818.jpg")),
                 accountEmail: Text("Abanoub Nabil @gmail.com"),
                 accountName: Text("Abanoub Nabil"),
               )
