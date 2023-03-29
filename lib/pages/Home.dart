@@ -135,10 +135,4 @@ class Home extends StatelessWidget {
       ),
     );
   }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties.add(DiagnosticsProperty<Item>('product', product));
-  }
 }
