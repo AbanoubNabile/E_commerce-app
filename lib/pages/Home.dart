@@ -11,6 +11,7 @@ import 'details_screen.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final Carttt = Provider.of<Cart>(context);
     return SafeArea(
       child: Scaffold(
         body: Padding(
