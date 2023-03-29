@@ -1,8 +1,10 @@
 import 'package:commec_app/shared/colors.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../model/item.dart';
+import 'details_screen.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -20,7 +22,14 @@ class Home extends StatelessWidget {
               itemCount: 4,
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Details(product: items[index]),
+                      ),
+                    );
+                  },
                   child: GridTile(
                       child: Stack(
                         children: [
@@ -125,5 +134,11 @@ class Home extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty<Item>('product', product));
   }
 }
