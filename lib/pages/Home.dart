@@ -105,33 +105,7 @@ class Home extends StatelessWidget {
               ]),
         ),
         appBar: AppBar(
-          actions: [
-            Row(
-              children: [
-                Stack(
-                  children: [
-                    Positioned(
-                      bottom: 24,
-                      child: Container(
-                          child: Text("${Carttt.selectedProducts.length}",
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  color: Color.fromARGB(255, 0, 0, 0))),
-                          decoration: BoxDecoration(
-                              color: Color.fromARGB(211, 164, 255, 193),
-                              shape: BoxShape.circle)),
-                    ),
-                    IconButton(
-                        onPressed: () {}, icon: Icon(Icons.add_shopping_cart)),
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 12),
-                  child: Text("\$13", style: TextStyle(fontSize: 18)),
-                ),
-              ],
-            ),
-          ],
+          actions: [],
           backgroundColor: appbarGreen,
           title: Consumer<Cart>(builder: ((context, testt, child) {
             return Text("${testt}");
